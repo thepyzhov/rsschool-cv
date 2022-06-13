@@ -1,1 +1,20 @@
-/* Stub to push on git */
+@font-face {
+    font-family: 'Monsterrat';
+    src: url("assets/fonts/Montserrat-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monsterrat';
+    src: url("assets/fonts/Montserrat-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Monsterrat';
+    src: url("assets/fonts/Montserrat-Italic.ttf");
+    font-weight: normal;
+    font-style: italic;
+}
