@@ -9,5 +9,118 @@
     <title>cv</title>
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item hover-underline-animation"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item hover-underline-animation"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item hover-underline-animation"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item hover-underline-animation"><a href="#code-style" class="nav-link">Code Style</a></li>
+                    <li class="nav-item hover-underline-animation"><a href="#education" class="nav-link">Education</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="section" id="profile">
+                <div class="profile-row">
+                    <div class="profile-column">
+                        <img src="assets/img/avatar-2074.png" class="profile-image" alt="avatar" width="200" height="200">
+                    </div>
+                    <div class="profile-column profile-description">
+                        <h1>DMITRII PYZHOV</h1>
+                        <p>iOS Developer</p>
+                        <div class="profile-contacts">
+                            <div class="contacts-button">
+                                <p><a href="https://www.linkedin.com/in/thepyzhov/">LinkedIn</a></p>
+                            </div>
+                            <div class="contacts-button">
+                                <p>@thepyzhov</p>
+                            </div>
+                            <div class="contacts-button">
+                                <p>fiche40@gmail.com</p>
+                            </div>
+                        </div>
+                        <p>Live in Batumi, Georgia</p>
+                        <p>English: B1-B2, Russian: Native, Deutsch: A1</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="about">
+                <h2 class="section-title">About</h2>
+                <p>I love working in team and it is really important for me to actively communicate with my team, making decisions that allow building an awesome product.
+                </p>
+                <p>Besides the usual UIKit and SwiftUI knowledge, I have experience with Alamofire, CoreData and programming patterns. Good at algorithms, functional and object-oriented programming.</p>
+            </section>
+            <section class="section" id="Skills">
+                <h2 class="section-title">Skills</h2>
+                <ul>
+                    <li>Swift (UIKit, SwiftUI), XCode</li>
+                    <li>Alamofire</li>
+                    <li>MySQL</li>
+                    <li>Firebase</li>
+                    <li>Objective</li>
+                </ul>
+            </section>
+            <section class="section" id="projects">
+                <h2 class="section-title">Projects</h2>
+                <h3>GIPHYApp</h3>
+                <h5>Technologies: MVC, UIKit (w/out Storyboards), Alamofire, Gifu</h5>
+                <p>A clone of a popular gif application GIPHY.</p>
+                <div class="project-list">
+                    <ul>
+                        <li>Fetch data through GIPHY API with Alamofire requests.</li>
+                        <li>Complex Collection View with Compositional layout.</li>
+                        <li>GIF support with Gifu Pod.</li>
+                        <li>SwiftLint to enforce Swift style and conventions.</li>
+                    </ul>
+                </div>
+
+                <h3>SpotifyApp</h3>
+                <h5>Technologies: MVC, UIKit (w/out Storyboards), SDWebImage, WebKit</h5>
+                <p>A simplified clone of a Spotify with a restricted bunch of functionality.</p>
+                <div class="project-list">
+                    <ul>
+                        <li>Fetch data throught Spotify API with URLSessions.</li>
+                        <li>OAuth 2.0 with PKCE.</li>
+                        <li>Audio player for listening preview tracks.</li>
+                        <li>Different kinds of views (e.g. CollectionViews, WebViews etc.)</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section" id="code-style">
+                <h2 class="section-title">Code Style</h2>
+                <pre>
+                    <code>
+                        protocol Reusable {
+                            static var identifier: String { get }
+                        }
+                        
+                        extension Reusable {
+                            static var identifier: String {
+                                String(describing: self)
+                            }
+                        }
+                    </code>
+                </pre>
+            </section>
+            <section class="section" id="education">
+                <h2 class="section-title">Education</h2>
+                <ul>
+                    <li>Stanford University CS 193P (free online course 2021)</li>
+                    <li>Applied mathematics and computer science (Saint-Petersburg State University of Architecture and Civil engineering 2014-2018)</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="creation-date">
+                <p>@ 2022 by Dmitrii Pyzhov</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
