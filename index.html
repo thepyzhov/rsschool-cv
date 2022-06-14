@@ -4,8 +4,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/img/favicon.ico">
+    <title>cv</title>
 </head>
 <body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item hover-underline-animation"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item hover-underline-animation"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item hover-underline-animation"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item hover-underline-animation"><a href="#code-style" class="nav-link">Code</a></li>
+                    <li class="nav-item hover-underline-animation"><a href="#education" class="nav-link">Education</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="section" id="profile">
+                <div class="profile-row">
+                    <div class="profile-column">
+                        <img src="assets/img/avatar.png" class="profile-image" alt="avatar" width="200" height="200">
+                    </div>
+                    <div class="profile-column profile-description">
+                        <h1>DMITRII PYZHOV</h1>
+                        <div class="profile-info">
+                            <p><b>iOS Developer</b></p>
+                        </div>
+                        <div class="profile-info">
+                            <p>Live in Batumi, Georgia</p>
+                        </div>
+                        <div class="profile-info">
+                            <p><i>English: B1-B2 Russian: Native Deutsch: A1</i></p>
+                        </div>
+                        <div class="profile-contacts">
+                            <a class="social-link" href="https://www.github.com/thepyzhov/">
+                                <img src="https://img.shields.io/badge/github-black?style=for-the-badge&logo=github&logoColor=white" alt="Telegram Icon">
+                            </a>
+                            <a class="social-link" href="https://www.t.me/thepyzhov/">
+                                <img src="https://img.shields.io/badge/Telegram-black?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Icon">
+                            </a>
+                            <a class="social-link" href="https://www.linkedin.com/in/thepyzhov/">
+                                <img src="https://img.shields.io/badge/LinkedIn-black?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="about">
+                <h2 class="section-title">About</h2>
+                <p>I love working in team and it is really important for me to actively communicate with my team, making decisions that allow building an awesome product.
+                </p>
+                <p>Besides the usual UIKit and SwiftUI knowledge, I have experience with Alamofire, CoreData and programming patterns. Good at algorithms, functional and object-oriented programming.</p>
+            </section>
+            <section class="section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <ul>
+                    <li>Swift (UIKit, SwiftUI), XCode</li>
+                    <li>Alamofire</li>
+                    <li>MySQL</li>
+                    <li>Firebase</li>
+                    <li>Objective</li>
+                </ul>
+            </section>
+            <section class="section" id="projects">
+                <h2 class="section-title">Projects</h2>
+                <h3><a class="project-link" href="https://github.com/thepyzhov/GIPHYApp">GIPHYApp</a></h3>
+                <h5 class="project-technologies">Technologies: MVC, UIKit (w/out Storyboards), Alamofire, Gifu</h5>
+                <p>A clone of a popular gif application GIPHY.</p>
+                <div class="project-list">
+                    <ul>
+                        <li>Fetch data through GIPHY API with Alamofire requests.</li>
+                        <li>Complex Collection View with Compositional layout.</li>
+                        <li>GIF support with Gifu Pod.</li>
+                        <li>SwiftLint to enforce Swift style and conventions.</li>
+                    </ul>
+                </div>
+
+                <h3><a class="project-link" href="https://github.com/thepyzhov/SpotifyApp">SpotifyApp</a></h3>
+                <h5 class="project-technologies">Technologies: MVC, UIKit (w/out Storyboards), SDWebImage, WebKit</h5>
+                <p>A simplified clone of a Spotify with a restricted bunch of functionality.</p>
+                <div class="project-list">
+                    <ul>
+                        <li>Fetch data throught Spotify API with URLSessions.</li>
+                        <li>OAuth 2.0 with PKCE.</li>
+                        <li>Audio player for listening preview tracks.</li>
+                        <li>Different kinds of views (e.g. CollectionViews, WebViews etc.)</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section" id="code-style">
+                <h2 class="section-title">Code Style</h2>
+                <pre>
+                    <code>
+                        protocol Reusable {
+                            static var identifier: String { get }
+                        }
+                        
+                        extension Reusable {
+                            static var identifier: String {
+                                String(describing: self)
+                            }
+                        }
+                    </code>
+                </pre>
+            </section>
+            <section class="section" id="education">
+                <h2 class="section-title">Education</h2>
+                <ul>
+                    <li>Stanford University CS 193P (free online course 2021)</li>
+                    <li>Applied mathematics and computer science (Saint-Petersburg State University of Architecture and Civil engineering 2014-2018)</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-items">
+            <div class="footer-item">
+                <p>@ 2022 by Dmitrii Pyzhov</p>
+            </div>
+            <div class="footer-item">
+                <img src="assets/img/rs_school_js.svg" alt="RS School logo" width=100 height=100>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
