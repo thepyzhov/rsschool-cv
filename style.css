@@ -111,3 +111,7 @@ body {
 .profile-contacts {
     display: flex;
 }
+
+.social-link {
+    padding-right: 5px;
+}
