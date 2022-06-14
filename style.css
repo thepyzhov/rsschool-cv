@@ -59,12 +59,10 @@ body {
 }
 
 .section {
-    border: 1px solid #ededed;
 }
 
 .profile-row {
     display: flex;
-    /* height: 200px; */
 }
 
 .profile-column {
@@ -81,7 +79,6 @@ body {
 
 .section-title {
     border-bottom: 1px solid;
-    /*background-image: radial-gradient(#CCC, #FFF), radial-gradient(#CCC, #FFF);*/
 }
 
 .hover-underline-animation {
