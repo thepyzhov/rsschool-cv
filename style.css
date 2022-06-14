@@ -71,6 +71,7 @@ body {
 
 .profile-image {
     border-radius: 50%;
+    margin: 10px;
 }
 
 .profile-description {
@@ -111,4 +112,17 @@ body {
 
 .social-link {
     padding-right: 5px;
+}
+
+.footer-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item {
+    align-self: center;
+}
+
+.project-technologies {
+    color: #a1a1a1;
 }
